@@ -70,6 +70,11 @@ namespace nsK2EngineLow {
 		if (animationClips != nullptr) {
 			initData.m_skeleton = &m_skeleton;
 		}
+		//スケルトンが無い場合、スケルトンあり用の頂点シェーダーを使わないように変更する。
+		if (initData.m_skeleton == nullptr)
+		{
+			initData.m_vsSkinEntryPointFunc = "VSMain";
+		}
 
 		m_model.Init(initData);
 	}
