@@ -33,7 +33,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	g_collisionObjectManager = &m_collisionObjectManager;
 
 	//Fade* fade = NewGO<Fade>(0);
-	//Game* game = NewGO<Game>(0);
+	Game* game = NewGO<Game>(0);
 
 	// ここからゲームループ。
 	while (DispatchWindowMessage())

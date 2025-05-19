@@ -6,13 +6,9 @@
 
 
 
-
 class Game : public IGameObject
 {
 public:
-
-
-
 	Game();
 	~Game();
 	bool Start();
@@ -22,7 +18,7 @@ public:
 
 
 private:
-
+	
 
 };
 

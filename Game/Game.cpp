@@ -1,33 +1,26 @@
 #include "stdafx.h"
 #include "Game.h"
+#include "Actor/BattleCharactor.h"
 
 
 
 Game::Game()
 {
-	//PathStorage test;
-	//パスストレージのインスタンスを作成
-	//m_pathSt = PathStorage::CreateInstance();
 }
 
 Game::~Game()
 {
-	
-	
-
 }
 
 bool Game::Start()
 {
-	
+	NewGO<app::actor::BattleCharactor>(0);
 
 	return true;
 }
 
 void Game::Update()
 {
-	
-	
 }
 
 

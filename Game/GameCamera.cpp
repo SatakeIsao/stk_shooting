@@ -12,7 +12,7 @@ GameCamera::~GameCamera()
 bool GameCamera::Start()
 {
 	//注視点から視点までのベクトルを設定
-	m_toCameraPos.Set(0.0f, 70.0f, -200.0f);
+	m_toCameraPos.Set(0.0f, 0.0f, 10.0f);
 	//m_toCameraPos *= 0.5f;
 	
 	//カメラのニアクリップとファークリップを設定

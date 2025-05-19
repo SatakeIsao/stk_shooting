@@ -44,6 +44,9 @@ namespace app
 			{
 			}
 			virtual ~Charactor() {}
+			virtual bool Start() override;
+			virtual void Update() override;
+			virtual void Render(RenderContext& rc) override;
 		};
 	}
 }
