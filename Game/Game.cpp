@@ -15,7 +15,7 @@ Game::~Game()
 bool Game::Start()
 {
 	auto* battleCharacter = NewGO<app::actor::BattleCharacter>(0);
-	battleCharacter->Initialize("Assets/ModelData/StoneMonster.tkm");
+	battleCharacter->Initialize("Assets/ModelData/StoneMonster/StoneMonster.tkm");
 
 	return true;
 }

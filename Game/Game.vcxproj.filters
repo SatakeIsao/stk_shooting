@@ -20,6 +20,7 @@
     <ClCompile Include="Actor\BattleCharactor.cpp" />
     <ClCompile Include="Actor\StateMachine.cpp" />
     <ClCompile Include="Actor\ActorState.cpp" />
+    <ClCompile Include="CharacterSteering.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -33,5 +34,6 @@
     <ClInclude Include="Actor\StateMachine.h" />
     <ClInclude Include="Util\CRC32.h" />
     <ClInclude Include="Actor\ActorState.h" />
+    <ClInclude Include="CharacterSteering.h" />
   </ItemGroup>
 </Project>
