@@ -78,7 +78,7 @@ namespace app
 		 */
 		class CharacterStateMachine : public ActorStateMachine
 		{
-		private:
+		protected:
 			// 入力方向
 			Vector3 inputDirection_;
 			// 入力パワー
@@ -94,6 +94,24 @@ namespace app
 			virtual ~CharacterStateMachine() {}
 
 			virtual void Update() override {}
+
+			
+		public:
+			/**
+			 * 入力方向の設定
+			 */
+			void SetInputDirection(const Vector3& inputDirection)
+			{
+				inputDirection_ = inputDirection;
+			}
+
+			/**
+			 * 入力パワーの設定
+			 */
+			void SetInputPower(const float inputPower)
+			{
+				inputPower_ = inputPower;
+			}
 		};
 
 
