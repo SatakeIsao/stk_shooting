@@ -3,6 +3,7 @@
  */
 #pragma once
 #include "Actor.h"
+#include "StateMachine.h"
 
 namespace app
 {
@@ -13,6 +14,10 @@ namespace app
 		 */
 		class BattleCharacter : public Charactor
 		{
+		private:
+			BattleCharacterStateMachine stateMachine_;
+
+
 		public:
 			BattleCharacter() {};
 			virtual ~BattleCharacter() {};
@@ -21,11 +26,16 @@ namespace app
 			virtual void Render(RenderContext& rc) override;
 
 
+		public:
 			/**
 			 * 初期化関数
 			 * Note：外部からモデルのファイルパスを指定して、見た目を変えられるようにする
 			 */
 			void Initialize(const char* filePath);
+
+
+		public:
+			BattleCharacterStateMachine* GetStateMachine() { return &stateMachine_; }
 		};
 		
 	}
